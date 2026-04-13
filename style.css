@@ -1,0 +1,133 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#navbar{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(1 17 32);
+    padding: 0px 160px;
+    padding-top: 20px;
+    position: fixed;
+}
+
+#navbar nav ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-decoration: none;
+    list-style: none;
+}
+
+#navbar nav ul a{
+    text-decoration: none;
+    color: white;
+}
+
+#navbar nav ul a:hover{
+    color: blue
+}
+
+#navbar div button{
+    height: 40px;
+    width: 75px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: rgb(2, 19, 47);
+    color: white;
+    gap: 20px;
+    font-size: 16px;
+}
+
+#i{
+    padding-left: 75px;
+}
+
+#navbar div{
+    display: flex;
+    gap: 20px;
+}
+
+#navbar div button:hover{
+    background-color: white;
+    color: black;
+}
+/* navbar css is over */
+/* ================================================================================================================================================================= */
+
+
+#first{
+    padding: 0px 160px;
+    display: flex;
+    background-color: rgb(1 17 32);
+    height: 90vh;
+}
+
+#para{
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#l1{ 
+    color: white;
+    font-size: 20px;
+}
+
+#l2{ 
+    color: white;
+    font-size: 60px;
+}
+
+#l3{ 
+    color: white;
+    font-size: 20px;
+    color: rgb(14, 47, 74);
+}
+
+#btn2{
+    z-index: 5;
+    /* display: flex; */
+    justify-content: center;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+}
+
+#first div{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#img1{
+    z-index: 5;
+    border: 1px solid white;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+#img2{
+    z-index: 5;
+    border: 1px solid white;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+/* Main-section1 is over */
+/* ================================================================================================================================================================== */
+
+
+#second{
+    padding: 0px 160px;
+    height: 90vh;
+    background-color: rgb(13 26 44);
+}
+/* Main-section2 is over */
+/* ================================================================================================================================================================== */
