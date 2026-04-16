@@ -41,5 +41,14 @@ transform: translate(px(x-axis), px(y-axis)) -> for opposite side use minus sign
 box-shadow: px(x-axis) px(y-axis) px(transperancy) px(spread) colour; -> for opposite sideuse minus sign
     
 
-<a herf=#id="name_of_id">
+<!-- <a herf=#id="name_of_id"> -->
 scrolling-behaviour: smaooth;
+
+For making a website responsive
+@media(max-width:430px){
+    id or class{
+        css
+    }
+}
+
+label for =""
