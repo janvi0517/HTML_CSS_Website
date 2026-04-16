@@ -285,9 +285,7 @@
 #third{
     height: 180vh;
     background-color: rgb(1 17 32);
-    padding: 0px 160px;
-    /* display: flex;
-    justify-content: center; */
+    padding: 0px 20px;
 }
 
 #line{
@@ -298,48 +296,50 @@
     justify-content: center;
 }
 
-#images1{
-    /* height: 250px;
-    width: 230px; */
-    /* border: 1px solid white; */
+#image1{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    /* justify-content: space-between; */
     gap: 40px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .card{
-    width: 220px;
+    width: 250px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items: flex-start;
 }
 
 #card1{
     display: flex;
-    /* gap: 60px; */
-    justify-content: space-between;
+    gap: 40px;
+    justify-content: center;
 }
 
 .img4{
-    width: 220px;
-    height: 220px;
+    width: 250px;
+    height: 250px;
     border-radius: 10px;
     background-color: #0b1f3a;
     border: 1px solid rgba(255,255,255,0.2);
 }
 
 .img5{
-    width: 220px;
-    height: 220px;
+    width: 250px;
+    height: 250px;
     border-radius: 10px;
     background-color: #0b1f3a;
     border: 1px solid rgba(255,255,255,0.2);
 }
 
 #card2{
-    padding-top: 60px;
-    justify-content: center
+    display: flex;
+    /* justify-content: center; */
+    gap: 60px;
+    margin-top: 40px;
+    padding-left: 180px;
 }
 
 .card h2{
@@ -354,6 +354,7 @@
 }
 /* Main-section3 is over */
 /* ================================================================================================================================================================== */
+
 
 #fourth{
     height: 80vh;
