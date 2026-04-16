@@ -289,22 +289,29 @@
 }
 
 #line{
-    padding-top: 60px;
-    font-size: 50px;
     color: white;
+    font-size: 50px;
     display: flex;
     justify-content: center;
+    padding-top: 20px;
 }
 
 #image1{
     display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-    gap: 40px;
-    margin-top: 40px;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 60px;
 }
 
-.card{
+.img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #0b1f3a;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+#card{
     width: 250px;
     display: flex;
     flex-direction: column;
@@ -312,45 +319,57 @@
     align-items: flex-start;
 }
 
-#card1{
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-}
-
-.img4{
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
-    background-color: #0b1f3a;
-    border: 1px solid rgba(255,255,255,0.2);
-}
-
-.img5{
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
-    background-color: #0b1f3a;
-    border: 1px solid rgba(255,255,255,0.2);
-}
-
-#card2{
-    display: flex;
-    /* justify-content: center; */
-    gap: 60px;
-    margin-top: 40px;
-    padding-left: 180px;
-}
-
-.card h2{
-    color: white;
-    font-size: 20px;
-    margin: 0;
-}
-
 .card p{
     color: rgb(120,150,180);
     margin: 0;
+}
+
+.card h2{
+    padding-top: 10px;
+    color: white;
+    margin: 0;
+    font-size: 30px;
+}
+
+.card-down{
+    margin-top: 90px;
+}
+
+.card-down p{
+    color: rgb(120,150,180);
+    margin: 0;
+}
+
+.card-down h2{
+    padding-top: 10px;
+    color: white;
+    margin: 0;
+    font-size: 30px;
+}
+
+.img4{
+    background-image: url(./Images/speakers_1\ \(1\).png);
+    background-size: cover;   
+}
+
+.img5{
+    background-image: url(./Images/speakers_3.png);
+    background-size: cover;   
+}
+
+.img6{
+    background-image: url(./Images/speakers_4.png);
+    background-size: cover;   
+}
+
+.img7{
+    background-image: url(./Images/speakers_5.png);
+    background-size: cover;   
+}
+
+.img8{
+    background-image: url(./Images/speakers_2.png);
+    background-size: cover;   
 }
 /* Main-section3 is over */
 /* ================================================================================================================================================================== */
