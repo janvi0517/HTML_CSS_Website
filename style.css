@@ -181,7 +181,7 @@
 }
 
 #img2 .tag{
-    top: 20px;
+    bottom: 20px;
     right: -30px;
 }
 /* Main-section1 is over */
@@ -222,18 +222,24 @@
 
 #sld{
     display: flex;
-    /* gap: 20px; */
     justify-content: center;
-    gap: 50px;
+    gap: 20px;  
     height: 80px;
     width: 80%;
 }
 
 #sld div{
-    padding-top: 20px;
-    width: 105px;
-    height: 90%;
+    width: 100px;
+    height: 100%;
     border: 1px solid rgb(240, 239, 239);
+    border-radius: 10px;
+    overflow: hidden;  
+}
+
+#sld img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 10px;
 }
 
@@ -241,6 +247,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 } */
 
 #para1{
@@ -261,13 +268,15 @@
 }
 
 #btn2{
-    height: 40px;
-    width: 75px;
+    margin-top: 30px;
+}
+
+#btn2 button{
+    padding: 12px 20px;
     border-radius: 10px;
-    border: 2px solid white;
-    background-color: rgb(2, 19, 47);
-    color: white;
-    gap: 40px;
+    border: 1px solid #3f6de0;
+    background-color: transparent;
+    color: #3f6de0;
     font-size: 16px;
 }
 /* Main-section2 is over */
