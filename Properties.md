@@ -42,7 +42,7 @@ box-shadow: px(x-axis) px(y-axis) px(transperancy) px(spread) colour; -> for opp
     
 
 <!-- <a herf=#id="name_of_id"> -->
-scrolling-behaviour: smaooth;
+scrolling-behaviour: smooth;
 
 For making a website responsive
 @media(max-width:430px){
