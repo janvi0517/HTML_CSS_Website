@@ -6,58 +6,75 @@
 }
 
 #navbar{
-    height: 90px;
+    height: 80px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(1 17 32);
     padding: 0px 160px;
-    padding-top: 20px;
     position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 #navbar nav ul{
     display: flex;
     align-items: center;
     gap: 30px;
-    text-decoration: none;
     list-style: none;
 }
 
-#navbar nav ul a{
+#navbar nav ul li a{
     text-decoration: none;
-    color: white;
-    transition: all 2s ease;
-}
-
-#navbar nav ul a:hover{
-    color: blue
-}
-
-#navbar div button{
-    height: 40px;
-    width: 75px;
-    border-radius: 10px;
-    border: 2px solid white;
-    background-color: rgb(2, 19, 47);
-    color: white;
-    gap: 20px;
+    color: #cbd5e1;
     font-size: 16px;
+    transition: 0.3s;
 }
 
-#i{
-    padding-left: 75px;
+#navbar nav ul li a:hover{
+    color: #3b82f6;
 }
 
-#navbar div{
+#navbar .right{
     display: flex;
-    gap: 20px;
+    align-items: center;
+    gap: 15px;
 }
 
-#navbar div button:hover{
-    background-color: white;
-    color: black;
+#navbar .right i{
+    color: white;
+    font-size: 18px;
+}
+
+#navbar .right button{
+    height: 40px;
+    padding: 0 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#navbar .signin{
+    background: transparent;
+    border: 1px solid #3b82f6;
+    color: #3b82f6;
+}
+
+#navbar .signup{
+    background: #3b82f6;
+    border: none;
+    color: white;
+}
+
+#navbar .signin:hover{
+    background: #3b82f6;
+    color: white;
+}
+
+#navbar .signup:hover{
+    opacity: 0.9;
 }
 /* navbar css is over */
 /* ================================================================================================================================================================= */
@@ -71,7 +88,7 @@
     height: 90vh;
 }
 
-#para{
+#para2{
     z-index: 5;
     display: flex;
     justify-content: center;
@@ -83,8 +100,8 @@
 #l1{ 
     display: flex;
     align-items: start;
-    color: white;
-    font-size: 20px;
+    color: rgb(115, 161, 228);
+    font-size:150px;
 }
 
 #l2{ 
@@ -95,7 +112,7 @@
 #l3{ 
     color: white;
     font-size: 20px;
-    color: rgb(14, 47, 74);
+    color: rgb(27, 61, 90);
 }
 
 #first .button{
@@ -109,7 +126,8 @@
 
 #first .button button{
     height: 50px;
-    width: 110px;
+    width: 130px;
+    text-transform: capitalize;
 }
 
 #first .images{
@@ -525,38 +543,229 @@
 /* ================================================================================================================================================================== */
 
 
-#fifth{
-    height: 90vh;
-    background-color: rgb(1 17 32);
+#fifth {
+    min-height: 80vh;
+    background: linear-gradient(#031525, #020e1a);
+    padding-bottom: 80px;
 }
 
-.heading{
-    font-size: 50px;
-    font-weight: 800;
+.heading {
+    font-size: 48px;
+    font-weight: 700;
     color: white;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.slider-wrapper {
     display: flex;
+    align-items: center;
     justify-content: center;
-    padding-top: 50px;
+    gap: 20px;
 }
 
-#sld2{
+.arrow {
+    color: #3b82f6;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.date-slider {
     display: flex;
-    justify-content: space-between;
-    margin: 40px 155px;
+    gap: 20px;
 }
 
-.date{
+.date {
     width: 110px;
-    height: 100px;
-    border: 1px solid white;
+    height: 110px;
+    background-color: #0c2239;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: 12px;
+    color: #9aa4af;
+    transition: 0.3s;
+}
+
+.date h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.date p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.date.active {
+    color: white;
+    background-color: #122b45;
+}
+
+.conference-card {
+    width: 70%;
+    margin: 60px auto;
+    border: 1px solid #1f3b57;
+    border-radius: 20px;
+    padding: 30px 40px;
+    color: white;
+}
+
+.conf-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conf-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.conf-speaker {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.conf-speaker img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.conf-speaker span {
+    font-size: 12px;
+    color: #7b8a99;
+}
+
+.conf-speaker p {
+    margin: 0;
+    font-weight: 500;
+}
+
+button {
+    background: transparent;
+    border: 1px solid #3b82f6;
+    color: #3b82f6;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #3b82f6;
+    color: white;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #1f3b57;
+    margin: 25px 0;
 }
 /* Main-section5 is over */
 /* ================================================================================================================================================================== */
+
+
+footer {
+    background-color: #0d2438;
+    padding: 40px 80px;
+    color: #cbd5e1;
+}
+
+/* TOP */
+footer .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+footer .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+
+footer .logo-icon {
+    font-size: 28px;
+    font-weight: bold;
+    color: #3b82f6;
+}
+
+/* NAV */
+footer .footer-nav {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+footer .footer-nav li {
+    cursor: pointer;
+}
+
+footer .footer-nav .active,
+footer .footer-nav li:hover {
+    color: #3b82f6;
+}
+
+/* SOCIAL */
+footer .socials i {
+    margin-left: 15px;
+    background: #1e3a5f;
+    padding: 8px;
+    border-radius: 4px;
+    color: white;
+}
+
+/* LINE */
+footer hr {
+    border: none;
+    border-top: 1px solid #2b4a66;
+    margin: 30px 0;
+}
+
+/* BOTTOM */
+footer .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .newsletter-title {
+    font-size: 20px;
+    color: white;
+}
+
+/* INPUT */
+footer .newsletter-box {
+    display: flex;
+}
+
+footer .newsletter-box input {
+    padding: 12px;
+    border: none;
+    outline: none;
+    width: 250px;
+    background: #081826;
+    color: white;
+    border-radius: 6px 0 0 6px;
+}
+
+footer .newsletter-box button {
+    padding: 12px 20px;
+    border: none;
+    background: #3b82f6;
+    color: white;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+}
 
 
 @media(max-width:430px){
